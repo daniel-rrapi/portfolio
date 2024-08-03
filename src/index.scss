@@ -11,6 +11,10 @@
   --light-navy: #112240;
 
   counter-reset: section 1;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-slate) var(--navy);
+  scroll-behavior: smooth;
 }
 
 .sectionHeader {
