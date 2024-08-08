@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 const P = styled.p`
-  max-width: 55vw;
+  max-width: 950px;
 `;
 
 export default function About() {
   return (
-    <section className="container">
+    <section id="about" className="container">
       <h4 className="sectionHeader">About me</h4>
       <P className="mt-4">
         HI! Im Daniel and welcome to my portfolio. I started coding industrial

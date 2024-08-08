@@ -54,7 +54,7 @@ export default function Projects() {
     fetchProjects();
   }, []);
   return (
-    <section className="container">
+    <section id="projects" className="container">
       <h4 className="sectionHeader">Projects</h4>
       {projects.map((project, index) => (
         <div

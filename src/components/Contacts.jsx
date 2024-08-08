@@ -21,7 +21,10 @@ export default function Contacts() {
   `;
   return (
     <>
-      <Wrapper className="container d-flex flex-column align-items-center row-gap-4">
+      <Wrapper
+        id="contacts"
+        className="container d-flex flex-column align-items-center row-gap-4"
+      >
         <h4 className="sectionHeaderWithoutAfter">Contacts</h4>
         <H1>Get in touch</H1>
         <P>
@@ -74,7 +77,10 @@ export default function Contacts() {
           </a>
         </div>
       </Wrapper>
-      <Footer>Copyright © 2024. All rights are reserved</Footer>
+      <Footer>
+        Developed by Daniel, with ❤️. Designed by{" "}
+        <a href="https://github.com/bchiang7">Brittany Chiang</a>
+      </Footer>
     </>
   );
 }

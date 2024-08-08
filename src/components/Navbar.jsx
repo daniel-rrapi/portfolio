@@ -24,17 +24,21 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <a className="nav-link" aria-current="page" href="#">
+          <div className="navbar-nav column-gap-3">
+            <a
+              className="nav-link text-decoration-none"
+              aria-current="page"
+              href="#"
+            >
               <Span>01.</Span>Home
             </a>
-            <a className="nav-link" href="#">
+            <a className="nav-link text-decoration-none" href="#about">
               <Span>02.</Span>About me
             </a>
-            <a className="nav-link" href="#">
+            <a className="nav-link text-decoration-none" href="#projects">
               <Span>03.</Span>Projects
             </a>
-            <a className="nav-link" href="#">
+            <a className="nav-link text-decoration-none" href="#contacts">
               <Span>04.</Span>Contacts
             </a>
           </div>

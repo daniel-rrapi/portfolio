@@ -66,3 +66,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: var(--green);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--green);
+}
