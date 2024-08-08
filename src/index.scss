@@ -17,25 +17,52 @@
   scroll-behavior: smooth;
 }
 
-.sectionHeader {
+// Mixin per gli stili condivisi
+@mixin section-header-base {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--lightest-slate);
   display: flex;
+  margin-top: 30vh;
 }
-.sectionHeader::after {
-  display: inline;
-  content: "";
-  border: 1px solid var(--lightest-navy);
-  width: 30%;
-  height: 0;
-  margin-left: 10px;
-  transform: translate(0, 14px);
+.sectionHeader {
+  @include section-header-base;
+
+  &::after {
+    display: inline;
+    content: "";
+    border: 1px solid var(--lightest-navy);
+    width: 30%;
+    height: 0;
+    margin-left: 10px;
+    transform: translate(0, 14px);
+  }
+
+  &::before {
+    counter-increment: section;
+    content: counter(section, decimal-leading-zero) ". ";
+    font-family: "Fira Code", monospace;
+    color: var(--green);
+    margin-right: 7px;
+  }
 }
-.sectionHeader::before {
-  counter-increment: section;
-  content: counter(section, decimal-leading-zero) ". ";
+.sectionHeaderWithoutAfter {
+  @include section-header-base;
+
+  &::before {
+    counter-increment: section;
+    content: counter(section, decimal-leading-zero) ". ";
+    font-family: "Fira Code", monospace;
+    color: var(--green);
+    margin-right: 7px;
+  }
+}
+
+a {
   font-family: "Fira Code", monospace;
   color: var(--green);
-  margin-right: 7px;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }

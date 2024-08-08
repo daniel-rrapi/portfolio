@@ -28,7 +28,7 @@ const Svg = styled.img`
 
 export default function BarLinks() {
   return (
-    <Wrapper className="d-flex flex-column row-gap-4">
+    <Wrapper className="d-none d-xxl-flex flex-column row-gap-4">
       <a href="https://github.com/daniel-rrapi" target="_blank">
         <Svg src="src/assets/svgs/github-logo.svg" alt="github logo" />
       </a>
