@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg position-fixed top-0">
       <div className="container-fluid justify-content-between">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand text-decoration-none" href="#">
           daniel_rrapi.dev
         </a>
         <button

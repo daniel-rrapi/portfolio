@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Wrapper = styled.section`
   position: fixed;
   bottom: 0;
-  left: 50px;
+  left: 25px;
   &::after {
     content: "";
     width: 0;
