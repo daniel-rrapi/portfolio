@@ -30,13 +30,13 @@ export default function BarLinks() {
   return (
     <Wrapper className="d-none d-xxl-flex flex-column row-gap-4">
       <a href="https://github.com/daniel-rrapi" target="_blank">
-        <Svg src="src/assets/svgs/github-logo.svg" alt="github logo" />
+        <Svg src="/svgs/github-logo.svg" alt="github logo" />
       </a>
       <a
         href="https://www.linkedin.com/in/daniel-rrapi-full-stack-developer"
         target="_blank"
       >
-        <Svg src="src/assets/svgs/linkedin-logo.svg" alt="linkedin logo" />
+        <Svg src="/svgs/linkedin-logo.svg" alt="linkedin logo" />
       </a>
     </Wrapper>
   );
