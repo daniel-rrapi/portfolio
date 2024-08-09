@@ -74,3 +74,7 @@ a:hover {
 .nav-link:focus {
   color: var(--green);
 }
+.navbar-toggler {
+  color: #64ffda17;
+  border: var(--bs-border-width) solid #0dcaf0;
+}
