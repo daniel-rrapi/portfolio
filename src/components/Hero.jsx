@@ -16,9 +16,9 @@ const H1 = styled.h1`
   font-size: 60px;
   font-weight: 600;
 `;
-const H3 = styled.h3`
-  font-size: 60px;
-`;
+// const H3 = styled.h3`
+//   font-size: 60px;
+// `;
 const P = styled.p`
   max-width: 500px;
 `;
@@ -28,7 +28,7 @@ export default function Hero() {
     <StyledContainer className="container">
       <FirstP>Hi my name is</FirstP>
       <H1>Daniel Rrapi</H1>
-      <H3>I build things for the web</H3>
+      {/* <H3>I build things for the web</H3> */}
       <P>
         Im a Full Stack Developer, I love coding and im impoving myself every
         day pushed by a huge curiosity.
