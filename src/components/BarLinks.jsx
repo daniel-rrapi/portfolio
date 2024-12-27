@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import githubLogo from "/svgs/github-logo.svg";
+import linkedinLogo from "/svgs/linkedin-logo.svg";
 
 const Wrapper = styled.section`
   position: fixed;
@@ -30,12 +32,9 @@ export default function BarLinks() {
   return (
     <Wrapper className="d-none d-xxl-flex flex-column row-gap-4">
       <a href="https://github.com/daniel-rrapi" target="_blank">
-        <Svg src="/svgs/github-logo.svg" alt="github logo" />
+        <Svg src={githubLogo} alt="github logo" />
       </a>
-      <a
-        href="https://www.linkedin.com/in/daniel-rrapi-full-stack-developer"
-        target="_blank"
-      >
+      <a href={linkedinLogo} target="_blank">
         <Svg src="/svgs/linkedin-logo.svg" alt="linkedin logo" />
       </a>
     </Wrapper>
