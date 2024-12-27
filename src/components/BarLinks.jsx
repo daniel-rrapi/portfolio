@@ -34,8 +34,11 @@ export default function BarLinks() {
       <a href="https://github.com/daniel-rrapi" target="_blank">
         <Svg src={githubLogo} alt="github logo" />
       </a>
-      <a href={linkedinLogo} target="_blank">
-        <Svg src="/svgs/linkedin-logo.svg" alt="linkedin logo" />
+      <a
+        href="https://www.linkedin.com/in/daniel-rrapi-full-stack-developer"
+        target="_blank"
+      >
+        <Svg src={linkedinLogo} alt="linkedin logo" />
       </a>
     </Wrapper>
   );
