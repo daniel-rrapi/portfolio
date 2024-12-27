@@ -82,7 +82,7 @@ Error generating stack: `+s.message+`
     transform: translate(0, -5px);
     transition: 0.5s;
   }
-`;function YP(){return $.jsxs(GP,{className:"d-none d-xxl-flex flex-column row-gap-4",children:[$.jsx("a",{href:"https://github.com/daniel-rrapi",target:"_blank",children:$.jsx(ev,{src:QP,alt:"github logo"})}),$.jsx("a",{href:KP,target:"_blank",children:$.jsx(ev,{src:"/svgs/linkedin-logo.svg",alt:"linkedin logo"})})]})}const XP=ht.p`
+`;function YP(){return $.jsxs(GP,{className:"d-none d-xxl-flex flex-column row-gap-4",children:[$.jsx("a",{href:"https://github.com/daniel-rrapi",target:"_blank",children:$.jsx(ev,{src:QP,alt:"github logo"})}),$.jsx("a",{href:"https://www.linkedin.com/in/daniel-rrapi-full-stack-developer",target:"_blank",children:$.jsx(ev,{src:KP,alt:"linkedin logo"})})]})}const XP=ht.p`
   max-width: 950px;
 `;function JP(){return $.jsxs("section",{id:"about",className:"container",children:[$.jsx("h4",{className:"sectionHeader",children:"About me"}),$.jsx(XP,{className:"mt-4",children:"HI! Im Daniel and welcome to my portfolio. I started coding industrial machines at school with the KOP language and a C/C++ based language for micro-controllers. Then I started learning web languages, my current stack is: Angular and Java/Spring. Checkout my latest projects below"})]})}var tv={};/**
  * @license
