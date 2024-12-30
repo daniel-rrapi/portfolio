@@ -43,8 +43,6 @@ export default function Projects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    console.log("test2:", import.meta.env.VITE_PROJECT_ID);
-
     const fetchProjects = async () => {
       const querySnapshot = await getDocs(collection(db, "projects"));
       const projectsList = querySnapshot.docs.map((doc) => ({
