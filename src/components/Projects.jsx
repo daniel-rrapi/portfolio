@@ -38,6 +38,7 @@ const Img = styled.img`
   overflow: hidden;
   max-width: 100%;
 `;
+
 export default function Projects() {
   const [projects, setProjects] = useState([]);
 
