@@ -1,10 +1,10 @@
 import "./App.scss";
-import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/Hero.jsx";
-import BarLinks from "./components/BarLinks.jsx";
-import About from "./components/About.jsx";
-import Projects from "./components/Projects.jsx";
-import Contacts from "./components/Contacts.jsx";
+import Navbar from "./components/Navbar/Navbar.component.jsx";
+import Hero from "./components/Hero/Hero.component.jsx";
+import BarLinks from "./components/BarLinks/BarLinks.component.jsx";
+import About from "./components/About/About.component.jsx";
+import Projects from "./components/Projects/Projects.component.jsx";
+import Contacts from "./components/Contacts/Contacts.component.jsx";
 
 function App() {
   return (
