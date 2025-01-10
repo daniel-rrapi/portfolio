@@ -36,7 +36,7 @@ const Tecnologies = styled.div`
 `;
 const Img = styled.img`
   overflow: hidden;
-  max-width: 100%;
+  width: 100%;
 `;
 
 export default function Projects() {
@@ -60,7 +60,7 @@ export default function Projects() {
       {projects.map((project, index) => (
         <div
           key={project.id}
-          className={`row mt-5 row-cols-1 row-cols-lg-2 row-gap-5 ${
+          className={`row mt-5 row-cols-1 row-cols-lg-2 row-gap-5 g-5 ${
             index % 2 === 0 ? "" : "flex-row-reverse"
           }`}
         >
