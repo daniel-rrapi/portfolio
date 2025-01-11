@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import styled from "styled-components";
 import styles from "./Projects.module.scss";
 
@@ -80,7 +81,18 @@ export default function Projects() {
               className={`h5 fw-bold ${index % 2 === 0 ? "" : "text-end"}`}
             >
               {project.name}
-              <Badge className="rounded-pill">{project.type}</Badge>
+              <OverlayTrigger
+                placement="top"
+                overlay={
+                  <Tooltip>
+                    {project.type === "Hobby"
+                      ? "This project is created in my free time, where I focus on learning new programming languages and concepts. Unfortunately, I don't have much time to dedicate to it."
+                      : "Made at work"}
+                  </Tooltip>
+                }
+              >
+                <Badge className="rounded-pill">{project.type}</Badge>
+              </OverlayTrigger>
             </Title>
 
             <Descr>{project.description}</Descr>
