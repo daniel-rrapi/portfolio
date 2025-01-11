@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
 import styles from "./Projects.module.scss";
 
@@ -38,6 +38,13 @@ const Img = styled.img`
   overflow: hidden;
   width: 100%;
 `;
+const Badge = styled.span`
+  border: 1px solid var(--green);
+  margin-left: 10px;
+  font-size: 0.75rem;
+  padding: 3px 7px;
+  font-weight: 500;
+`;
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
@@ -54,6 +61,7 @@ export default function Projects() {
 
     fetchProjects();
   }, []);
+
   return (
     <section id="projects" className="container">
       <h4 className="sectionHeader">Projects</h4>
@@ -72,7 +80,9 @@ export default function Projects() {
               className={`h5 fw-bold ${index % 2 === 0 ? "" : "text-end"}`}
             >
               {project.name}
+              <Badge className="rounded-pill">{project.type}</Badge>
             </Title>
+
             <Descr>{project.description}</Descr>
             <Tecnologies>
               {project.tecnologies.map((tecnology) => (
